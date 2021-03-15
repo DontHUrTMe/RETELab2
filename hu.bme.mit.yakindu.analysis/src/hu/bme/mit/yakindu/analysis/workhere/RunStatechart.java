@@ -40,7 +40,12 @@ public class RunStatechart {
 				s.runCycle();
 				print(s);
 				break;
-			case "exit":
+			case "ping":
+				s.raisePing();
+				s.runCycle();
+				print(s);
+				break;
+case "exit":
 				System.exit(0);
 				break;
 			default:
@@ -51,7 +56,8 @@ public class RunStatechart {
 	}
 
 	public static void print(IExampleStatemachine s) {
-		System.out.println("W = " + s.getSCInterface().getWhiteTime());
-		System.out.println("B = " + s.getSCInterface().getBlackTime());
-	}
+System.out.println("WhiteTime= " + s.getSCInterface().getWhiteTime());
+System.out.println("BlackTime= " + s.getSCInterface().getBlackTime());
+System.out.println("Pong= " + s.getSCInterface().getPong());
+}
 }
