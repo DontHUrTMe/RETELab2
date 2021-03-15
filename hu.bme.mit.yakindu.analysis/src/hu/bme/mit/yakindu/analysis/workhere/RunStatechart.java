@@ -48,16 +48,6 @@ public class RunStatechart {
 				break;
 			}
 		}
-		
-//		s.runCycle();
-//		print(s);
-//		s.raiseStart();
-//		s.runCycle();
-//		System.in.read();
-//		s.raiseWhite();
-//		s.runCycle();
-//		print(s);
-//		System.exit(0);
 	}
 
 	public static void print(IExampleStatemachine s) {
